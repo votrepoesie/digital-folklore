@@ -1,0 +1,115 @@
+<style>
+  #overlay {
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 100;
+    animation: body-pulse 0.5s infinite;
+    filter: brightness(1.2);
+  }
+
+  @keyframes #overlay {
+    0% {
+      background-color: #BB86FF;
+    }
+
+    25% {
+      background-color: #fff664;
+    }
+
+    50% {
+      background-color: #868EFF;
+    }
+
+    75% {
+      background-color: #ff6484;
+    }
+
+    100% {
+      background-color: #CAFF86;
+    }
+  }
+
+  @keyframes body-pulse {
+    0% {
+      background-color: #f6c6fa;
+    }
+
+    25% {
+      background-color: #a0b3fc;
+    }
+
+    50% {
+      background-color: #c792eb;
+    }
+
+    75% {
+      background-color: #ffadf7;
+    }
+
+    100% {
+      background-color: #8175f7;
+    }
+  }
+
+  .element {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: #CAFF86;
+    animation-name: stretch;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+
+  @keyframes stretch {
+    0% {
+      transform: scale(.5);
+      background-color: #BB86FF;
+      border-radius: 100%;
+      filter: blur(10px);
+    }
+
+    50% {
+      background-color: #868EFF;
+      filter: blur(20px);
+    }
+
+    100% {
+      transform: scale(2.0);
+      background-color: #CAFF86;
+      filter: blur(30px);
+    }
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    animation: body-pulse 1s infinite;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<body>
+  <div class="element"></div>
+  <div id="overlay">
+    <center>
+      <h3 style="font-family: retro gaming">how are you doing today?</h3>
+      <p id="date" style="font-family: retro gaming"></p>
+      <!-- Is there a way to embed the font? -->
+      <script>
+        const currentDate = new Date(),
+          currentDay = currentDate.getDate() < 10 ? '0' + currentDate.getDate() :
+          currentDate.getDate(),
+          currentMonth = currentDate.getMonth() < 9 ? '0' + (currentDate.getMonth() + 1) :
+          (currentDate.getMonth() + 1);
+
+        document.getElementById("date").innerHTML = currentMonth + '/' + currentDay + '/' + currentDate.getFullYear();
+      </script>
+    </center>
+  </div>
+</body>
