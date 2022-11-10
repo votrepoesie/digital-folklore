@@ -49,9 +49,11 @@
   <h3 class="h3-5">poet</h3>
   
   <h4 class="h4-1">&nbsp idealist &nbsp</h4>
-  <h4 class="h4-2">&nbsp capricorn-sun &nbsp</h4>
+  <h4 class="h4-2">&nbsp 🌞 capricorn-sun 🌞 &nbsp</h4>
   <h4 class="h4-3">&nbsp romantic &nbsp</h4>
   <h4 class="h4-4">&nbsp perfectionist &nbsp</h4>
+  <h4 class="h4-5">&nbsp 🌜 leo-moon 🌛 &nbsp</h4>
+  <h4 class="h4-6">&nbsp aries-rising rawrrr&nbsp</h4>
 
   <img class="img-1" src="kawaii-alien.gif" alt="a gif of a kawaii alien">
 <!-- via https://i.pinimg.com/originals/1b/fd/9d/1bfd9dc3b5be3d89622a131846e161ad.gif -->
@@ -60,14 +62,16 @@
   <img class="img-3" src="seedling.gif" alt="a gif of a seedling">
 <!--  -->
 <!--   <img class="img-4" src="sun cloud.png" alt="a cute 3D cloud"> -->
-
-  <div class="cloud">
-    <div class="hello">hello</div>
-  </div>
-  
 </body>
 
 <style>
+  
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
   
   :root {
     --tc: rgba(44,116,200,1);
@@ -95,50 +99,6 @@
   
   p:hover {
     transform: scale(1.5);
-  }
-  
-  .cloud { 
-    height: 200px;
-    width: 200px;
-    background: white;
-    position: absolute;
-    clip-path: ellipse(43% 21% at 50% 50%);
-    top: 600px;
-    left: 600px;
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    font-smooth: greyscale;
-    transition-duration: 0.5s;
-    transition-property: transform;
-  }
-  
-  .cloud:hover {
-    background: var(--tc);
-    transform: scale(1.5);
-  }
-  
-  .hello {
-    color: var(--tc);
-    height: 200px;
-    width: 200px;
-    position: relative;
-    font-size: 50;
-    top: 70px;
-    left: 45px;
-  }
-  
-  .hello:hover {
-    color: white;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
   }
   
   body {
@@ -197,12 +157,6 @@
     background: white;
     color: var(--tc);
     position: absolute;
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    font-smooth: greyscale;
     transition-duration: 0.5s;
     transition-property: transform;
   }
@@ -238,10 +192,6 @@
     color: white;
     position: absolute;
     background: var(--tc);
-    display: inline-block;
-    vertical-align: middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   }
   
   h3:hover {
@@ -253,7 +203,6 @@
     color: var(--tc);
   }
   
-/*   painter */
   .h2-1 { 
     top: 255px;
     left: 120px;
@@ -307,11 +256,15 @@
     color: plum;
     background: white;
     position: absolute;
+    z-index: 100;
+    transition-duration: 0.5s;
+    transition-property: transform;
   }
   
   h4:hover {
     color: white;
     background: plum;
+    transform: scale(1.5) skew(10deg);
   }
   
   .h4-1 {
@@ -332,6 +285,16 @@
   .h4-4 {
     top: 770px;
     left: 90px;
+  }
+  
+  .h4-5 {
+    top: 800px;
+    left: 20px;
+  }
+  
+  .h4-6 {
+    top: 800px;
+    left: 550px;
   }
   
   img {
