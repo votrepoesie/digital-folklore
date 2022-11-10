@@ -29,14 +29,16 @@
     &nbsp<br>&nbsp<br>
     &nbsp<br>&nbsp<br>
     &nbsp<br>&nbsp<br>
-    &nbsp &nbsp &nbsp this is a long paragraph and I want to try something out &nbsp &nbsp &nbsp<br>
-    &nbsp &nbsp &nbsp this is a long paragraph and I want to try something out &nbsp &nbsp &nbsp <br>
-    &nbsp &nbsp &nbsp this is a long paragraph and I want to try something out &nbsp &nbsp &nbsp <br>
-    &nbsp &nbsp &nbsp this is a long paragraph and I want to try something out &nbsp &nbsp &nbsp <br>
-    &nbsp &nbsp &nbsp this is a long paragraph and I want to try something out &nbsp &nbsp &nbsp <br>
+<!--     &nbsp<br>&nbsp<br> -->
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp this is a long paragraph and I want to try something out &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp this is a long paragraph and I want to try something out &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp this is a long paragraph and I want to try something out &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp this is a long paragraph and I want to try something out &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp this is a long paragraph and I want to try something out &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
     &nbsp<br>&nbsp<br>
     &nbsp<br>&nbsp<br>
     &nbsp<br>&nbsp<br>
+    
    
   </p>
   
@@ -63,15 +65,34 @@
 
 <style>
   
+  :root {
+    --tc: rgba(44,116,200,1);
+/*     dusty blue */
+  }
+  
   p {
+    color: var(--tc);
+    text-shadow: 1px 1px hotpink;
     background: url("cloud.png");
     background-size: 100% 100%;
     position: absolute;
     top: 1000px;
     left: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    font-smooth: greyscale;
+    transition-duration: 0.5s;
+    transition-property: transform;/*  credit to IanLunn */
   }
   
-  .cloud {
+  p:hover {
+    transform: scale(1.5);
+  }
+  
+  .cloud { 
     height: 200px;
     width: 200px;
     background: white;
@@ -91,12 +112,12 @@
   }
   
   .cloud:hover {
-    background: rgba(44,116,200,1);
+    background: var(--tc);
     transform: scale(1.5);
   }
   
   .hello {
-    color: rgba(44,116,200,1);
+    color: var(--tc);
     height: 200px;
     width: 200px;
     position: relative;
@@ -170,7 +191,7 @@
   
   h2 {
     background: white;
-    color: rgba(44,116,200,1);
+    color: var(--tc);
     position: absolute;
     display: inline-block;
     vertical-align: middle;
@@ -182,10 +203,30 @@
     transition-property: transform;/*  credit to IanLunn */
   }
   
+  h2:hover {
+    background: var(--tc);
+    color: white;
+    transform: scale(1.5);
+  }
+  
   h3 {
     color: white;
     position: absolute;
-    background: rgba(44,116,200,1);
+    background: var(--tc);
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    font-smooth: greyscale;
+    transition-duration: 0.5s;
+    transition-property: transform;
+  }
+  
+  h3:hover {
+    background: white;
+    color: var(--tc);
+    transform: scale(1.5);
   }
   
 /*   painter */
@@ -194,22 +235,9 @@
     left: 120px;
   }
   
-  .h2-1:hover {
-    background: rgba(44,116,200,1);
-/*     background: url("cloud.png") no-repeat; */
-    color: white;
-    transform: scale(1.5);
-  }
-  
   .h2-2 {
     top: 400px;
     left: 350px;
-  }
-  
-  .h2-2:hover {
-    background: rgba(44,116,200,1);
-    color: white;
-    transform: scale(1.5);
   }
   
   .h2-3 {
@@ -217,32 +245,14 @@
     left: 500px;
   }
   
-  .h2-3:hover {
-    background: rgba(44,116,200,1);
-    color: white;
-    transform: scale(1.5);
-  }
-  
   .h2-4 {
     top: 700px;
     left: 120px;
   }
-  
-  .h2-4:hover {
-    background: rgba(44,116,200,1);
-    color: white;
-    transform: scale(1.5);
-  }
-  
+
   .h2-5 {
     top: 600px;
     left: 50px;
-  }
-  
-  .h2-5:hover {
-    background: rgba(44,116,200,1);
-    color: white;
-    transform: scale(1.5);
   }
   
   .h3-1 {
