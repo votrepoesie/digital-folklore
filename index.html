@@ -25,17 +25,81 @@
   <h2 class="h2-4">cat mom</h2>
   <h2 class="h2-5">୨✿╭͜ʖ╮✿୧</h2>
   
-  <h3 class="h3-1">art historian</h3>
+  <p>
+    this is a long paragraph and I want to text something out<br>
+    this is a long paragraph and I want to text something out<br>
+    this is a long paragraph and I want to text something out<br>
+    this is a long paragraph and I want to text something out<br>
+    this is a long paragraph and I want to text something out
+  </p>
   
+  <h3 class="h3-1">art historian<br>art historian<br>art historian</h3>
+<!--   <h3 class="h3-2">??</h3> -->
 
   <img class="img-1" src="kawaii-alien.gif" alt="a gif of a kawaii alien">
 <!-- via https://i.pinimg.com/originals/1b/fd/9d/1bfd9dc3b5be3d89622a131846e161ad.gif -->
   <img class="img-2" src="plant.gif" alt="a gif of a plant">
 <!-- via https://i.pinimg.com/originals/c3/24/79/c32479ecd876ee1e13d2cd51a48a6df7.gif -->
-  <img class="img-3" src="seedling.gif" alt="a gif of a seeling">
+  <img class="img-3" src="seedling.gif" alt="a gif of a seedling">
+<!--  -->
+<!--   <img class="img-4" src="sun cloud.png" alt="a cute 3D cloud"> -->
+
+  
+  <div class="cloud">
+    <div class="hello">hello</div>
+  </div>
+
+  
+  
+  
 </body>
 
 <style>
+  
+  p {
+    position: absolute;
+    top: 500px;
+    left: 10px;
+  }
+  
+  .cloud {
+    height: 200px;
+    width: 200px;
+    background: white;
+    position: absolute;
+    clip-path: ellipse(43% 21% at 50% 50%);
+    top: 600px;
+    left: 600px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    font-smooth: greyscale;
+    transition-duration: 0.5s;
+    transition-property: transform;/*  credit to IanLunn */
+    
+  }
+  
+  .cloud:hover {
+    background: rgba(44,116,200,1);
+    transform: scale(1.5);
+  }
+  
+  .hello {
+    color: rgba(44,116,200,1);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    font-size: 50;
+    top: 70px;
+    left: 45px;
+  }
+  
+  .hello:hover {
+    color: white;
+  }
+  
   * {
     margin: 0;
     padding: 0;
@@ -96,6 +160,7 @@
   }
   
   h2 {
+    background: white;
     color: rgba(44,116,200,1);
     position: absolute;
     display: inline-block;
@@ -109,17 +174,20 @@
   }
   
   h3 {
-    color: rgba(44,116,200,1);
+    color: white;
     position: absolute;
+    background: rgba(44,116,200,1);
   }
   
-  .h2-1 {
+/*   painter */
+  .h2-1 { 
     top: 255px;
     left: 120px;
   }
   
   .h2-1:hover {
     background: rgba(44,116,200,1);
+/*     background: url("cloud.png") no-repeat; */
     color: white;
     transform: scale(1.5);
   }
@@ -191,6 +259,12 @@
   .img-3 {
     top: 100px;
     left: 600px;
+  }
+  
+  .img-4 {
+    height: 200px;
+    top: 750px;
+    left: 100px;
   }
   
 /*   things to add: 
