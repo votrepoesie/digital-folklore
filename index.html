@@ -46,6 +46,12 @@
   <h3 class="h3-2">illustrator</h3>
   <h3 class="h3-3">creative coder</h3>
   <h3 class="h3-4">lover of nature</h3>
+  <h3 class="h3-5">poet</h3>
+  
+  <h4 class="h4-1">&nbsp idealist &nbsp</h4>
+  <h4 class="h4-2">&nbsp capricorn-sun &nbsp</h4>
+  <h4 class="h4-3">&nbsp romantic &nbsp</h4>
+  <h4 class="h4-4">&nbsp perfectionist &nbsp</h4>
 
   <img class="img-1" src="kawaii-alien.gif" alt="a gif of a kawaii alien">
 <!-- via https://i.pinimg.com/originals/1b/fd/9d/1bfd9dc3b5be3d89622a131846e161ad.gif -->
@@ -232,18 +238,13 @@
     color: white;
     position: absolute;
     background: var(--tc);
-/*     effect */
     display: inline-block;
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-/*     backface-visibility: hidden;
-    font-smooth: greyscale;
-    transition-duration: 0.5s;
-    transition-property: transform; */
   }
   
-  h3:hover, h3:focus, h3:active {
+  h3:hover {
     animation-name: h3;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
@@ -284,8 +285,8 @@
   }
   
   .h3-2 {
-    top: 210px;
-    left: 400px;
+    top: 260px;
+    left: 450px;
   }
   
   .h3-3 {
@@ -295,6 +296,42 @@
   
   .h3-4 {
     top: 308px;
+  }
+  
+  .h3-5 {
+    top: 500px;
+    left: 320px;
+  }
+  
+  h4 {
+    color: plum;
+    background: white;
+    position: absolute;
+  }
+  
+  h4:hover {
+    color: white;
+    background: plum;
+  }
+  
+  .h4-1 {
+    top: 520px;
+    left: 400px;
+  }
+  
+  .h4-2 {
+    top: 600px;
+    left: 260px;
+  }
+  
+  .h4-3 {
+    top: 240px;
+    left: 300px;
+  }
+  
+  .h4-4 {
+    top: 770px;
+    left: 90px;
   }
   
   img {
