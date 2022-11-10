@@ -85,7 +85,8 @@
     backface-visibility: hidden;
     font-smooth: greyscale;
     transition-duration: 0.5s;
-    transition-property: transform;/*  credit to IanLunn */
+    transition-property: transform;
+    /*  credit to http://ianlunn.github.io/Hover/ */
   }
   
   p:hover {
@@ -107,8 +108,7 @@
     backface-visibility: hidden;
     font-smooth: greyscale;
     transition-duration: 0.5s;
-    transition-property: transform;/*  credit to IanLunn */
-    
+    transition-property: transform;
   }
   
   .cloud:hover {
@@ -200,7 +200,7 @@
     backface-visibility: hidden;
     font-smooth: greyscale;
     transition-duration: 0.5s;
-    transition-property: transform;/*  credit to IanLunn */
+    transition-property: transform;
   }
   
   h2:hover {
@@ -209,24 +209,50 @@
     transform: scale(1.5);
   }
   
+  @keyframes h3 {
+    16.65% {
+      transform: translateX(12px);
+    }
+    33.3% {
+      transform: translateX(-8px);
+    }
+    49.95% {
+      transform: translateX(6px);
+    }
+    66.6% {
+      transform: translateX(-4px);
+    }
+    83.25% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
   h3 {
     color: white;
     position: absolute;
     background: var(--tc);
+/*     effect */
     display: inline-block;
     vertical-align: middle;
-    transform: translateZ(0);
+    transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
+/*     backface-visibility: hidden;
     font-smooth: greyscale;
     transition-duration: 0.5s;
-    transition-property: transform;
+    transition-property: transform; */
   }
   
-  h3:hover {
-    background: white;
+  h3:hover, h3:focus, h3:active {
+    animation-name: h3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+/*     background: white;
     color: var(--tc);
-    transform: scale(1.5);
+    transform: rotate(20deg); */
   }
   
 /*   painter */
