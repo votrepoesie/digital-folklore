@@ -12,23 +12,32 @@
       <li><a href="date.html">about</a></li>
     </ul>
   </header>
-  <section>
+  
+  <section class="s1">
+    
+     <h1>
+       <br>welcome to my webpage! 
+       <br>I am a _____ ...
+       <br>... well, just click around.
+       <br> beware of rabbit holes!      
+     </h1>
+    
   </section>
-  <h1>
-    Welcome to my page! <br>I am a _____ ... well, just click around.
-  </h1>
+ 
+  <section class="s2">
+    
+    <h2 class="h2-1">painter</h2>
+    <h2 class="h2-2">writer</h2>
+    <h2 class="h2-3">designer</h2>
+    <h2 class="h2-4">cat mom</h2>
+    <h2 class="h2-5">୨✿╭͜ʖ╮✿୧</h2>
+
   
-  <h2 class="h2-1">painter</h2>
-  <h2 class="h2-2">writer</h2>
-  <h2 class="h2-3">designer</h2>
-  <h2 class="h2-4">cat mom</h2>
-  <h2 class="h2-5">୨✿╭͜ʖ╮✿୧</h2>
   
-  <p>
+<!--   <p>
     &nbsp<br>&nbsp<br>
     &nbsp<br>&nbsp<br>
     &nbsp<br>&nbsp<br>
-<!--     &nbsp<br>&nbsp<br> -->
     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp did you drink water today? &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp when was the last time you looked up at the sky &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp and thought to yourself, I am happy because today &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
@@ -37,10 +46,8 @@
     &nbsp<br>&nbsp<br>
     &nbsp<br>&nbsp<br>
     &nbsp<br>&nbsp<br>
-    
-   
-  </p>
-  
+  </p> -->
+
   <h3 class="h3-1">art historian<br>art historian<br>art historian</h3>
   <h3 class="h3-2">illustrator</h3>
   <h3 class="h3-3">creative coder</h3>
@@ -53,8 +60,11 @@
   <h4 class="h4-4">&nbsp perfectionist &nbsp</h4>
   <h4 class="h4-5">&nbsp 🌜 leo-moon 🌛 &nbsp</h4>
   <h4 class="h4-6">&nbsp aries-rising rawrrr&nbsp</h4>
+  
+  </section>
 
-<!--   <img class="img-1" src="kawaii-alien.gif" alt="a gif of a kawaii alien"> -->
+  <img class="img-1" src="pink cloud.gif" alt="a gif of pink clouds">
+  
 <!-- via https://i.pinimg.com/originals/1b/fd/9d/1bfd9dc3b5be3d89622a131846e161ad.gif -->
 <!--   <img class="img-2" src="plant.gif" alt="a gif of a plant"> -->
 <!-- via https://i.pinimg.com/originals/c3/24/79/c32479ecd876ee1e13d2cd51a48a6df7.gif -->
@@ -66,11 +76,23 @@
   <img class="img-8" src="waterfall.gif" alt=""> -->
 <!--   <img class="img-8" src="" alt=""> -->
 
+  <section>
+    <div class="s3">
+      <center>
+       &nbsp
+       <br>
+       ✿ &nbsp ✿ &nbsp this website is made with netnet.studio &nbsp ✿ &nbsp ✿
+       <br>
+       &nbsp 
+      </center>
+    </div>
+  </section>
+  
 </body>
 
 <style>
   
-    * {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -78,8 +100,16 @@
   }
   
   :root {
-    --tc: rgba(44,116,200,1);
-/*     dusty blue */
+    --tc: plum;
+  }
+  
+  .s3 {
+    height: 6%;
+    width: 100%;
+    background: plum;
+    color: white;
+    position: absolute;
+    bottom: 0px;
   }
   
   p {
@@ -94,7 +124,6 @@
     vertical-align: middle;
     transition-duration: 0.5s;
     transition-property: transform;
-    /*  credit to http://ianlunn.github.io/Hover/ */
   }
   
   p:hover {
@@ -102,13 +131,11 @@
   }
   
   body {
-/*     background: url("pink cloud.gif"); */
     background: thistle;
   }
   
   header {
     background: plum;
-/*     background: radial-gradient(circle, rgba(189,104,141,1) 0%, rgba(44,116,200,1) 100%); */
     position: absolute;
     top: 0;
     left: 0;
@@ -142,17 +169,17 @@
   
   header ul li a:hover {
     background: white;
-    color: purple;
+    color: var(--tc);
     border-radius: 20px;
   }
   
   h1 {
     position: absolute;
     display: flex;
-    top: 120px;
-    left: 30px; 
+    top: 15%;
+    left: 10%; 
     color: white;
-    text-shadow: 2px 2px purple;
+    text-shadow: 2px 2px rebeccapurple;
   }
   
   h2 {
@@ -305,10 +332,10 @@
   }
   
   .img-1 {
-    top: 75px;
+    top: 70px;
   }
   
-/*   .img-2 {
+  .img-2 {
     top: 600px;
     left: 330px;
   }
@@ -346,7 +373,7 @@
     top: 630px;
     left: 450px;
     z-index: -200;
-  } */
+  } 
   
 /*   things to add: 
   1. background image pulse???
